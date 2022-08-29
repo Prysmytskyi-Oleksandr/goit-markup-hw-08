@@ -1,7 +1,7 @@
 
 .hero {
         background-color: var(--hero-fone);
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/img/bgm.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/bgm.jpg);
         background-size: cover;
         padding-top: 118px;
         padding-bottom: 118px;
@@ -12,7 +12,7 @@
 screen and (min-resolution: 192dpi),
 screen and(min-resolution: 2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/img/bgm@2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/bgm@2x.jpg);
     }
 }
 
@@ -52,7 +52,7 @@ screen and(min-resolution: 2dppx) {
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/img/bgt.jpg);
+            url(../images/img/bgt.jpg);
     }
 }
 
@@ -74,7 +74,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/img/bgd.jpg);
+            url(../images/img/bgd.jpg);
 
 }
 
@@ -98,7 +98,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/img/bgd@2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/bgd@2x.jpg);
     }
 }
 
