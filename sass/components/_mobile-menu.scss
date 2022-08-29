@@ -1,0 +1,155 @@
+@media screen and (max-width: 767px){
+    .mobile-menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible; 
+    pointer-events: auto;
+
+}
+
+
+
+.mobile-menu_container{
+    position: relative;
+    height: 100%;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+}
+
+.mobile-menu_close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    line-height: 0;
+    fill: var(--title-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+    }
+}
+
+.mobile-menu-nav__list:not(:last-child) {
+      margin-bottom: 32px; 
+}
+
+.mobile-menu-nav__link{
+    position: relative;
+        @include font (500, 40px, 47px);
+        letter-spacing: 0.02em;    
+        color: var(--title-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+
+  &:hover,
+  &:focus{
+        transform: scale(1.214);          
+        letter-spacing: 0.02em;    
+        color: var(--accent-color);
+      }
+}
+
+.site-nav__link_current {
+    color: var(--accent-color);
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 108%;
+        height: 4px;
+        top: 50px;
+        left: -4%;
+        background: var(--accent-color);
+        border-radius: 2px;
+    }
+}
+
+.navcontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+        
+}
+
+.mobile-menu-contact__tel{
+    margin-bottom: 32px;
+}
+
+.mobile-menu-contact__mail{
+    margin-bottom: 64px;
+}
+
+.mobile-menu-contact__mailtel{
+    @include font (500, 24px, 28px);
+    letter-spacing: 0.02em;    
+    color: var(--primary-text-color);
+    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        @include font (500, 34px, 40px);
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
+}
+
+
+
+.mobile-menu-social{    
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-menu-social_messendger{
+    position: relative;  
+    
+
+  &:not(:last-child)::after{
+    content: "";
+    position: absolute;
+        left: 100%;
+        top: 50%;
+        width: 22px;
+        height: 0px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+}
+}
+
+.mobile-menu-social_link{
+    @include font (500, 18px, 22px);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+
+

@@ -1,10 +1,11 @@
 .section-client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .list-clients {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -13,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -21,13 +22,11 @@
 
     &:hover,
     &:focus {
-    border-color: var(--accent-color);
-    transform: scale(1.25);
+        border-color: var(--accent-color);
+        transform: scale(1.25);
 
+    }
 }
-}
-
-
 
 .client__icon-client {
     fill: #AFB1B8;
@@ -35,7 +34,33 @@
 
     .client:hover &,
     .client:focus & {
-    fill: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
+
+
+
+
+@media screen and (min-width:768px){
+    .client {width: 226px;}
 }
+
+
+
+@media screen and (min-width:1200px) {
+
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client {width: 170px;}
+}   
+
+
+
+
+
+
+
 

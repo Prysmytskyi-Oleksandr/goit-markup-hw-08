@@ -5,9 +5,7 @@
 }
 
 .contact-form-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font (700, 20px, 30px);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -125,8 +123,7 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font (400, 12px, 14px);
     letter-spacing: 0.03em;
     color: #757575;
 
@@ -153,9 +150,18 @@
 }
 
 .contact-form-link {
+   
     color: var(--accent-color);
     text-decoration-line: underline;
 }
 
+@media screen and (min-width: 1200px){
 
+.contact-form-title {
+    @include font (700, 20px, 23px);
+} 
 
+.contact-form-chek-desc{
+    @include font (400, 14px, 24px);
+}
+}

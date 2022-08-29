@@ -28,7 +28,7 @@
           <a href="./index.html" class="logo">
               <span class="logo__accent">Web</span>Studio</a>
          
-                  
+                 
           <ul class="site-nav">
             <li class="site-nav__menu-link">
               <a href="./index.html" class="site-nav__link site-nav__link_current">Студія</a>
@@ -39,10 +39,10 @@
             <li class="site-nav__menu-link">
               <a href="" class="site-nav__link">Контакти</a>
             </li>
-          </ul>
-        </nav>
+          </ul>  
+        </nav>    
 
-        <ul class="header-contact">
+         <ul class="header-contact">
           <li class="header-contact__mail">
             <a href="mailto:" class="mailtel-h">
               <svg class="icon-mail" >
@@ -62,34 +62,99 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open_icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu_container">
+         <button class="mobile-menu_close-btn"  data-menu-close>
+           <svg class="mobile-menu_close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-black">
+            </use>
+           </svg>
+         </button>
+         <div class="navcontact">
+           <nav>
+             <ul class="mobile-menu-nav">
+               <li class="mobile-menu-nav__list">
+                 <a href="./index.html" class="mobile-menu-nav__link site-nav__link_current">Студія</a>
+               </li>
+               <li class="mobile-menu-nav__list">
+                 <a href="./portfolio.html" class="mobile-menu-nav__link">Портфоліо</a>
+               </li>
+               <li class="mobile-menu-nav__list">
+                 <a href="" class="mobile-menu-nav__link">Контакти</a>
+               </li>
+             </ul>
+           </nav>
+           
+           <ul class="mobile-menu-contact">          
+             <li class="mobile-menu-contact__tel">
+               <a href="tel:" class="mobile-menu-contact__mailtel">             
+               +38 096 111 11 11</a>
+             </li>
+             <li class="mobile-menu-contact__mail">
+               <a href="mailto:" class="mobile-menu-contact__mailtel">
+               info@devstudio.com </a>
+             </li>
+           </ul>
+         </div>
+
+         <ul class="mobile-menu-social">
+
+          <li class="mobile-menu-social_messendger">
+            <a lang="en" href="" class="mobile-menu-social_link"> Instagram</a>
+          </li>
+
+          <li class="mobile-menu-social_messendger">
+            <a lang="en" href="" class="mobile-menu-social_link"> Twitter</a>
+          </li>
+
+          <li class="mobile-menu-social_messendger"> 
+           <a lang="en" href="" class="mobile-menu-social_link">  Facebook</a>
+          </li>
+            
+          <li class="mobile-menu-social_messendger">
+            <a lang="en" href="" class="mobile-menu-social_link"> LinkedIn</a>
+          </li>
+         </ul>
+
+
+      
+        </div>
       </div>
     </header>
 
     <main>
-      <!--Главная секция-->
+      <!-- Главная секция-->
       <div class="hero">
         <section class="container">
           <h1 class="hero-title">
-            Ефективні рішення  <br />
-            для вашого бізнесу
+            Ефективні рішення для <br />вашого бізнесу
           </h1>
           <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </section>
       </div>
+
+
       <!--Характеристика компании-->
       <section class="section-company-profile">
         <div class="container">
         <h2 class="section-title, visually-hidden">Прихований заголовок</h2>
-        <ul class="properties-list">
 
+        <ul class="properties-list">
           <li class="profile">
-            <div class="profile-fon">
-              
+            <div class="profile-fon">              
               <svg class="icons" width="70" height="70">
               <use  href="./images/icons.svg#icon-antenna-1"></use>
             </svg>
-            </div>                      
-
+            </div>                    
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="description">
               Ідейні міркування і навіть початок повсякденної роботи з формування позиції.
@@ -106,6 +171,7 @@
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
           </li>
+          
           <li class="profile">
             <div class="profile-fon">
               <svg class="icons" width="70" height="70">
@@ -133,6 +199,8 @@
         </div>
         
       </section>
+
+
       <!--Примеры работ-->
       <section class="section-sample">
         <div class="container">
@@ -140,27 +208,48 @@
 
         <ul class="sample-works">
           <li class="sample">
+            <picture>
+              <source srcset="./images/img/ex1desc.jpg 1x, ./images/img/ex1desc@2x.jpg 2x"
+              media="(min-width:1200px)">
+
             <img
-              src="images/algorytm.jpg"
-              alt="Составление алгоритма"
-              width="370"
+              src="./images/img/ex1desc.jpg"
+              alt="Десктопні додатки"
+              width="100%"
             />
+            </picture>
+           
             <div class="sample-name">
               <h3 class="name">Десктопні додатки</h3>
             </div>
           </li>
           <li class="sample">
+
+             <picture>
+              <source srcset="./images/img/ex2desc.jpg 1x, ./images/img/ex2desc@2x.jpg 2x"
+              media="(min-width:1200px)">
+
             <img
-              src="images/mob-app.jpg"
-              alt="Мобильное приложение"
-              width="370"
+              src="./images/img/ex2desc.jpg"
+              alt="Мобільні додатки"
+              width="100%"
             />
+            </picture>
+            
             <div class="sample-name">
               <h3 class="name">Мобільні додатки</h3>
             </div>
           </li>
           <li class="sample">
-            <img src="images/color-design.jpg" alt="Дизайн цвета" width="370" />
+             <picture>
+              <source srcset="./images/img/ex3desc.jpg 1x, ./images/img/ex3desc@2x.jpg 2x"
+              media="(min-width:1200px)">
+
+            <img src="./images/img/ex3desc.jpg" 
+            alt="Дизайнерські рішення" 
+            width="100%" />
+            </picture>
+           
             <div class="sample-name">
               <h3 class="name">Дизайнерські рішення</h3>
             </div>
@@ -177,11 +266,23 @@
           <h2 class="section-title">Наша команда</h2>
         <ul class="team">
           <li class="team__card-emploee">
-            <img
-              src="images/Product-Designer.jpg"
+            <picture>
+              <source srcset="./images/img/team1desc.jpg 1x, ./images/img/team1desc@2x.jpg 2x"
+              media="(min-width:1200px)">
+
+              <source srcset="./images/img/team1tab.jpg 1x, ./images/img/team1tab@2x.jpg 2x"
+              media="(min-width:768px)">
+
+              <source srcset="./images/img/team1mob.jpg 1x, ./images/img/team1mob@2x.jpg 2x"
+              media="(min-width:320px)">
+
+
+              <img src="./images/img/team1mob.jpg"
               alt="Игорь Демьяненко - Product Designer"
-              width="270"
-            />
+              width="100%"/>
+            
+            </picture>
+            
             <div class="emploee">
             <h3 class="emploee__title">Игорь Демьяненко</h3>
             <p lang="en" class="emploee__position">Product Designer</p>
@@ -219,11 +320,24 @@
           </li>
 
           <li class="team__card-emploee">
-            <img
-              src="images/Frontend-Developer.jpg"
+
+            <picture>
+              <source media="(min-width: 1200px)" 
+              srcset="./images/img/team2desc.jpg 1x, ./images/img/team2desc@2x.jpg 2x">
+
+              <source media="(min-width: 768px)" 
+              srcset="./images/img/team2tab.jpg 1x, ./images/img/team2tab@2x.jpg 2x">
+
+              <source media="(min-width: 320px)" 
+              srcset="./images/img/team2mob.jpg 1x, ./images/img/team2mob@2x.jpg 2x">
+
+              <img
+              src="./images/img/team2mob.jpg"
               alt="Ольга Репина - Frontend Developer"
-              width="270"
+              width="100%"
             />
+            </picture>
+            
             <div class="emploee">
             <h3 class="emploee__title">Ольга Репина</h3>
             <p lang="en" class="emploee__position">Frontend Developer</p>
@@ -260,11 +374,24 @@
             </div>
           </li>
           <li class="team__card-emploee">
-            <img
-              src="images/Marketing.jpg"
+
+             <picture>
+              <source media="(min-width: 1200px)" 
+              srcset="./images/img/team3desc.jpg 1x, ./images/img/team3desc@2x.jpg 2x">
+
+              <source media="(min-width: 768px)" 
+              srcset="./images/img/team3tab.jpg 1x, ./images/img/team3tab@2x.jpg 2x">
+
+              <source media="(min-width: 320px)" 
+              srcset="./images/img/team3mob.jpg 1x, ./images/img/team3mob@2x.jpg 2x">
+
+              <img
+              src="images/img/team3mob.jpg"
               alt="Николай Тарасов - Marketing"
-              width="270"
+              width="100%"
             />
+            </picture>
+                       
             <div class="emploee">
             <h3 class="emploee__title">Николай Тарасов</h3>
             <p lang="en" class="emploee__position">Marketing</p>
@@ -301,11 +428,24 @@
             </div>
           </li>
           <li class="team__card-emploee">
-            <img
-              src="images/UI-Designer.jpg"
+
+            <picture>
+              <source media="(min-width: 1200px)" 
+              srcset="./images/img/team4desc.jpg 1x, ./images/img/team4desc@2x.jpg 2x">
+
+              <source media="(min-width: 768px)" 
+              srcset="./images/img/team4tab.jpg 1x, ./images/img/team4tab@2x.jpg 2x">
+
+              <source media="(min-width: 320px)" 
+              srcset="./images/img/team4mob.jpg 1x, ./images/img/team4mob@2x.jpg 2x">
+
+              <img
+              src="images/img/team4mob.jpg"
               alt="Михайл Ермаков - UI Designer"
-              width="270"
-            />
+              width="100%"
+             />
+            </picture>
+            
             <div class="emploee">
             <h3 class="emploee__title">Михаил Ермаков</h3>
             <p lang="en" class="emploee__position">UI Designer</p>
@@ -404,12 +544,12 @@
 
 
   <footer class="footer ">
-    <div class="container">
-
+    <div class="container footer-container">
+     <div class="thumb-logo-address-link">
       <div class="thumb-logo-address">
         <a href="./index.html" class="logo-footer">
         <span class="logo-footer-web">Web</span>Studio</a>
-      <address>
+      <address class="footer-adress">
         <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
         <a href="mailto:" class="footer-mail mailtel-f">info@example.com</a>
         <a href="tel:" class="footer-tel mailtel-f">+38 099 111 11 11</a>
@@ -445,15 +585,15 @@
           <li>
             <a href="" class="footer-icons-link">
               <svg class="footer-icon" width="20px" height="20px">
-                <use href="./images/icons.svg#icons-link__icon-linkedin-1" ></use>
+                <use href="./images/icons.svg#icon-linkedin-1" ></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-
-      <div>
-        <form action="" class="">
+     </div>
+      <div class="footer-form-container">
+        <form action="" class="footer-form-case">
           <p class="footer-form-title"> Підпишіться на розсилку</p>
           <label for="">
             <input type="email" name="footer-user-mail" value="" placeholder="E-mail" class="footer-form">
@@ -477,6 +617,7 @@
 
 
 
+    
     <!-- Backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -545,7 +686,7 @@
 
 
 
-
+     <script src="./js/mobole-menu.js"></script>
      <script src="./js/modal.js"></script>
   </body>
 </html>
